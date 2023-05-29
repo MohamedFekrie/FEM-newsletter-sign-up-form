@@ -11,16 +11,16 @@ const emailSpan = document.querySelector('.box p span');
 // Change the main img on resize the page
 window.onresize = () => {
     if (innerWidth > 767) {
-        mainImg.src = "/assets/images/illustration-sign-up-desktop.svg"
+        mainImg.src = "assets/images/illustration-sign-up-desktop.svg"
     } else {
-        mainImg.src = "/assets/images/illustration-sign-up-mobile.svg"
+        mainImg.src = "assets/images/illustration-sign-up-mobile.svg"
     }
 }
 // to save the img on dismiss btn in diffrent devices
 if (innerWidth > 767) {
-    mainImg.src = "/assets/images/illustration-sign-up-desktop.svg"
+    mainImg.src = "assets/images/illustration-sign-up-desktop.svg"
 } else {
-    mainImg.src = "/assets/images/illustration-sign-up-mobile.svg"
+    mainImg.src = "assets/images/illustration-sign-up-mobile.svg"
 }
 
 submit.addEventListener('click', (e) => {
