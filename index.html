@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="d-flex justify-content-md-center align-items-center flex-column">
+
+
+    <div class="box p-5 position-absolute bg-white d-flex flex-column justify-content-md-center justify-content-around ">
+        <div class="content">
+            <img src="/assets/images/icon-success.svg" alt="">
+            <h1 class="mt-5 mt-md-4 mb-4">Thanks for subscribing!</h1>
+            <p class=" my-md-3">
+                A confirmation email has been sent to <span>ash@loremcompany.com</span>.
+                Please open it and click the button inside to confirm your subscription.
+            </p>
+        </div>
+        <input class="border-0 py-3 mt-md-4 btn-primary" type="submit" id="dismiss-msg" value="Dismiss message">
+    </div>
+
+
+
+    <div class="container d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center px-0 ps-md-4">
+        <div class="text-content order-1 order-md-0 p-4">
+            <h1 class="my-3">Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul class="list-unstyled mb-4">
+                <li class="mb-3 d-flex align-items-start">
+                    <img class="me-3" src="/assets/images/icon-success.svg" alt="">
+                    Product discovery and building what matters
+                </li>
+                <li class="mb-3 d-flex align-items-start">
+                    <img class="me-3" src="/assets/images/icon-success.svg" alt="">
+                    Measuring to ensure updates are a success
+                </li>
+                <li class="mb-3">
+                    <img class="me-3" src="/assets/images/icon-success.svg" alt="">
+                    And much more!
+                </li>
+            </ul>
+            <form class="position-relative">
+                <label class="" for="input">Email address</label>
+                <label class="worring-msg position-absolute" for="input">Valid email required</label>
+                <input class="d-block w-100 mb-4" type="email" id="input" placeholder="email@company.com" autocomplete="off">
+                <input class=" w-100 border-0 py-3 btn-primary" type="submit" id="submit" value="Subscribe to monthly newsletter">
+            </form>
+        </div>
+
+        <div class="img p-md-3 pe-md-2">
+            <img class="w-100" src="/assets/images/illustration-sign-up-desktop.svg" alt="">
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body></html>
+<!--
+
+    Stay updated!
+
+    Join 60,000+ product managers receiving monthly updates on:
+
+    Product discovery and building what matters
+    Measuring to ensure updates are a success
+    And much more!
+
+    Email address
+    email@company.com
+
+    Subscribe to monthly newsletter
+
+
+
+    Thanks for subscribing!
+
+    A confirmation email has been sent to ash@loremcompany.com.
+    Please open it and click the button inside to confirm your subscription.
+
+    Dismiss message
+
+-->

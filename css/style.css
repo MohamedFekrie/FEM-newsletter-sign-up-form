@@ -1,0 +1,135 @@
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --dark-Grey: hsl(234, 29%, 20%);
+    --charcoal-Grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%vw;
+    height: 100vh;
+    background-color: var(--charcoal-Grey);
+}
+
+
+@media(min-width: 777px) {
+    .container {
+        width: 850px;
+    }
+}
+
+@media(max-width: 777px) {
+    body {
+        background-color: var(--white);
+    }
+}
+
+
+
+.container {
+    background-color: var(--white);
+    border-radius: 1.5rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3.3rem
+}
+
+li img {
+    width: 1.5rem;
+}
+
+label {
+    color: var(--dark-Grey);
+    font-weight: 700;
+    font-size: .8887rem;
+}
+
+label.worring-msg {
+    color: hsl(4deg 100% 67% / 100%);
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+label.worring-msg.on {
+    display: block;
+}
+
+
+label.worring-msg.on + input[type="email"] {
+    background-color: hsl(4deg 100% 67% / 33%);
+    border: 1px solid hsl(4deg 100% 67% / 33%);
+}
+
+input[type="email"] {
+    border: 1px solid var(--grey);
+    line-height: 1.7;
+    height: 60px;
+    border-radius: .5rem;
+    padding-left: 1.6rem;
+}
+
+input[type="submit"] {
+    background-color: var(--dark-Grey);
+    color: var(--white);
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    transition: .5s;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0px 6px 20px #ff6b5b;
+    background: linear-gradient(0.80turn, hsl(4deg 100% 68%), hsl(347deg 100% 65%));
+}
+
+@media(max-width: 767px) {
+    .img {
+        width: 100%;
+    }
+
+    .box {
+        height: 100%;
+        width: 100%;
+        padding: 0 35px;
+    }
+}
+
+.box {
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 1.5rem;
+}
+
+.box.on {
+    transition: .8s;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.box p {
+    font-weight: 400;
+    color: var(--dark-Grey);
+}
+
+.box p span {
+    font-weight: 700;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
